@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --heading_width_height: 350px;
+  --butt_width_height: 150px;
+}
+
+* {
+  text-align: center;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+}
+  
+body {
+  font-size: 100%;
+  font-family: "Sacramento", sans-serif;
+  background-color: #010a01;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png")
+}  
+  
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  animation: pulsate 1.7s infinite alternate;  
+  width: var(--heading_width_height);
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+}
+
+@keyframes pulsate {
+  100% {
+      text-shadow:
+      0 0 3px #fff,
+      0 0 6px #fff,
+      0 0 9px #fff,
+      0 0 12px #bc13fe,
+      0 0 15px #bc13fe,
+      0 0 18px #bc13fe,
+      0 0 21px #bc13fe,
+      0 0 24px #bc13fe;
+  }
+  
+  0% {
+    text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 3px #fff,
+    0 0 4px #bc13fe,
+    0 0 5px #bc13fe,
+    0 0 6px #bc13fe,
+    0 0 7px #bc13fe,
+    0 0 8px #bc13fe;
+  }
+}
+
+.button-container {
+  display: grid;
+  margin-top: 32px;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: var(--butt_width_height);
+  height: var(--butt_width_height);
+  cursor: pointer;
+}
+
+#butt1 {
+  background-color: #f25022;
+  border: none;
+  box-shadow: 4px 8px 4px rgb(245, 121, 86);
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+#butt1:hover, #butt1:focus {
+  background-color: rgb(245, 121, 86);
+  box-shadow: 4px 8px 4px #f25022;
+}
+
+#butt1:active, #butt1.activated {
+  box-shadow: none;
+  background-color: rgb(245, 121, 86);
+  transform: translateY(10px);
+}
+
+#butt2 {
+  background-color: #7fba00;
+  border: none;
+  box-shadow: 4px 8px 4px rgb(198, 225, 77);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+#butt2:hover, #butt2:focus {
+  background-color: rgb(198, 225, 77);
+  box-shadow: 4px 8px 4px #7fba00;
+}
+
+#butt2:active, #butt2.activated {
+  box-shadow: none;
+  background-color: rgb(198, 225, 77);
+  transform: translateY(10px);
+}
+
+#butt3 {
+  background-color: #00a4ef;
+  border: none;
+  box-shadow: 4px 8px 4px rgb(77, 198, 255);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+#butt3:hover, #butt3:focus {
+  background-color: rgb(77, 198, 255);
+  box-shadow: 4px 8px 4px #00a4ef;
+}
+
+#butt3:active, #butt3.activated {
+  box-shadow: none;
+  background-color: rgb(77, 198, 255);
+  transform: translateY(10px);
+}
+
+#butt4 {
+  background-color: #ffb900;
+  border: none;
+  box-shadow: 4px 8px 4px rgb(255, 207, 77);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+#butt4:hover, #butt4:focus {
+  background-color: rgb(255, 207, 77);
+  box-shadow: 4px 8px 4px #ffb900;
+}
+
+#butt4:active, #butt4.activated {
+  box-shadow: none;
+  background-color: rgb(255, 207, 77);
+  transform: translateY(10px);
+}
+
+/* To hide the start button when pressed */
+.hide-butt {
+  display: none;
+}
+
+.start-butt-container {
+  display: flex;
+  justify-content: center;
+}
+
+#start-butt {
+  /* width: auto; */
+  /* height: auto; */
+  margin-top: 32px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  padding: 4px 12px 4px 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #bc13fe;
+  border: none;
+  box-shadow: 4px 8px 4px #c994db inset;
+  cursor: pointer;
+}
+
+.player {
+  margin-top: 44px;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+
+@media(max-width: 700px) {
+  :root {
+    --heading_width: 240px;
+    --butt_width:  100px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    padding: 0.3em;
+    width: var(--heading_width);
+    border-radius: 1.8rem;
+  }
+
+  .button-container {
+    margin-top: 28px;
+    grid-gap: 16px;
+  }
+
+  button {
+    width: var(--butt_width);
+    height: var(--butt_width);
+  }
+
+  #start-butt {
+    margin-top: 28px;
+    font-size: 1.2rem;
+  }
+
+  .player {
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+}

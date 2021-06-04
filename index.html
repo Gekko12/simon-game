@@ -1,0 +1,46 @@
+<!-- Page for simon game -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game - a memory game</title>
+  <link rel="stylesheet" href="simon.css">
+</head>
+
+<body>
+  <div class="container">
+    <heading>
+      <h1 class="neonText"> &nbsp;Simon Game&nbsp; </h1>
+      <h2 class="neonText js-level">&nbsp;</h2>
+    </heading>
+    <main>
+      <div class="button-container js-container unclickable">
+        <button id="butt1" data-tile="red"> </button>
+        <button id="butt2" data-tile="green"> </button>
+        <button id="butt3" data-tile="blue"> </button>
+        <button id="butt4" data-tile="yellow"> </button>
+      </div>
+      <div class="start-butt-container hide-butt ">
+        <input id="start-butt" type="button" value="start" />
+      </div>
+      <div class="player ">
+        <p class="js-info"> </p>
+      </div>
+      <div class="hidden">
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" data-sound="red"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" data-sound="green"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" data-sound="blue"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" data-sound="yellow"></audio>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="simon.js"></script>
+</body>
+
+</html>
