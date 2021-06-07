@@ -96,18 +96,18 @@ button {
   border: none;
   box-shadow: 4px 8px 4px rgb(245, 121, 86);
   border-radius: 12px;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
-#butt1:hover, #butt1:focus {
+/* #butt1:hover, #butt1:focus {
   background-color: rgb(245, 121, 86);
   box-shadow: 4px 8px 4px #f25022;
-}
+} */
 
 #butt1:active, #butt1.activated {
   box-shadow: none;
-  background-color: rgb(245, 121, 86);
-  transform: translateY(10px);
+  /* background-color: rgb(245, 121, 86); */
+  transform: translateY(8px);
 }
 
 #butt2 {
@@ -115,18 +115,18 @@ button {
   border: none;
   box-shadow: 4px 8px 4px rgb(198, 225, 77);
   border-radius: 12px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
-#butt2:hover, #butt2:focus {
+/* #butt2:hover, #butt2:focus {
   background-color: rgb(198, 225, 77);
   box-shadow: 4px 8px 4px #7fba00;
-}
+} */
 
 #butt2:active, #butt2.activated {
   box-shadow: none;
-  background-color: rgb(198, 225, 77);
-  transform: translateY(10px);
+  /* background-color: rgb(198, 225, 77); */
+  transform: translateY(8px);
 }
 
 #butt3 {
@@ -134,18 +134,18 @@ button {
   border: none;
   box-shadow: 4px 8px 4px rgb(77, 198, 255);
   border-radius: 12px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
-#butt3:hover, #butt3:focus {
+/* #butt3:hover, #butt3:focus {
   background-color: rgb(77, 198, 255);
   box-shadow: 4px 8px 4px #00a4ef;
-}
+} */
 
 #butt3:active, #butt3.activated {
   box-shadow: none;
-  background-color: rgb(77, 198, 255);
-  transform: translateY(10px);
+  /* background-color: rgb(77, 198, 255); */
+  transform: translateY(8px);
 }
 
 #butt4 {
@@ -153,18 +153,18 @@ button {
   border: none;
   box-shadow: 4px 8px 4px rgb(255, 207, 77);
   border-radius: 12px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
-#butt4:hover, #butt4:focus {
+/* #butt4:hover, #butt4:focus {
   background-color: rgb(255, 207, 77);
   box-shadow: 4px 8px 4px #ffb900;
-}
+} */
 
 #butt4:active, #butt4.activated {
   box-shadow: none;
-  background-color: rgb(255, 207, 77);
-  transform: translateY(10px);
+  /* background-color: rgb(255, 207, 77); */
+  transform: translateY(8px);
 }
 
 /* To hide the start button when pressed */
@@ -207,7 +207,7 @@ button {
 }
 
 .unclickable {
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 
